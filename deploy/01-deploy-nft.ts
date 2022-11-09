@@ -18,7 +18,7 @@ const deployBasicNFT: DeployFunction = async (
 
     const args: any[] = []
 
-    log("Start Deployment of Auction contract")
+    log("Start Deployment of BasicNFT contract")
 
     const confirmations = developmentChains.includes(network.name)
         ? 1
@@ -34,6 +34,7 @@ const deployBasicNFT: DeployFunction = async (
     })
 
     log(`Deployment of BasicNFT contract Successful!`)
+    log("NFT address is : " + basicNFT.address);
 
 }
 
