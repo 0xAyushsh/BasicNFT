@@ -16,7 +16,7 @@ const deployBasicNFT: DeployFunction = async (
     //Getting deployer config from named accounts config in hardhat-config.ts file
     const { deployer } = await getNamedAccounts()
 
-    const args: any[] = [1,1]
+    const args: any[] = []
 
     log("Start Deployment of Auction contract")
 
